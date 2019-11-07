@@ -1,0 +1,332 @@
+// Foundation by ZURB
+// Customization by Takomo
+
+// General Styles
+
+
+body {
+  background: $white;
+}
+
+p {
+  margin: 9px 0;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+button {
+  font-size: 14px;
+}
+
+.by-takomo {
+  p {
+    font-size: 10px;
+    opacity: 0.6;
+  }
+}
+
+
+// Top Bar Fix 
+.top-bar-section .has-dropdown {
+  margin-bottom: 7px !important;
+}
+
+
+// Page Spacing
+.space-top {
+  margin-top: 10px;
+}
+
+.space-top-large {
+  margin-top: 20px;
+}
+
+.minus-top {
+  margin-top: -10px;
+}
+
+.minus-top-large {
+  margin-top: -20px;
+}
+
+// Other
+.home-logo {
+  p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 14px;
+    font-family: Arial, "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  }
+}
+
+.logo {
+  margin-top: -5px;
+  height: 30px;
+}
+
+.logo-2 {
+  margin-top: 12px;
+  margin-right: 10px;
+  height: 45px;
+}
+
+.logo-3 {
+  height: 50px;
+}
+
+.orbit-content {
+  img {
+    margin: 0 auto;
+    border: 1px solid lighten($oil, 35%);
+    
+    @media #{$large-up} {
+      max-height: 330px;
+    }
+
+    @media #{$medium-only} {
+      max-height: 300px;
+    }
+
+    @media #{$small-only} {
+      max-height: 150px;
+    }
+
+    @media print {
+      max-height: 290px;
+      border: none;
+    }
+
+  }
+}
+
+.orbit-content-home {
+  img {
+    margin: 0 auto;
+    border: 1px solid lighten($oil, 35%);
+    
+    @media #{$large-up} {
+      max-height: 380px;
+    }
+
+    @media #{$medium-only} {
+      max-height: 300px;
+    }
+
+    @media #{$small-only} {
+      max-height: 150px;
+    }
+
+    @media print {
+      max-height: 410px;
+      border: none;
+    }
+
+  }
+}
+
+.tabs {
+  margin-top: 10px !important;
+  border: 1px solid $secondary-color;
+
+  dd {
+    border: 1px solid $secondary-color;
+  }
+
+  @media #{$medium-up} {
+    margin-left: -8px !important;
+  }
+}
+
+.tabs-home {
+  margin-left: 0px !important;
+}
+
+.tabs-home-2 {
+  dl {
+    width: 250px;
+  }
+  margin-left: 0px !important;
+}
+
+.panel-height {
+  margin-left: -8px;
+  margin-right: -8px;
+
+  @media #{$large-up} {
+    // min-height: 465px;
+    // max-height: 465px;
+  }
+
+  button {
+    margin-bottom: 0px;
+  }
+}
+
+.rutland-height {
+  @media #{$large-up} {
+    min-height: 430px;
+  }
+}
+
+.barton-height {
+  @media #{$large-up} {
+    min-height: 475px;
+  }
+}
+
+.bedford-height {
+  @media #{$large-up} {
+    min-height: 476px;
+  }
+}
+
+.coulston-height {
+  @media #{$large-up} {
+    min-height: 430px;
+  }
+}
+
+.catherines-height {
+  @media #{$large-up} {
+    min-height: 496px;
+  }
+}
+
+.westham-height {
+  @media #{$large-up} {
+    min-height: 476px;
+  }
+}
+
+.romney-height {
+  @media #{$large-up} {
+    min-height: 443px;
+  }
+}
+
+.index-height {
+  @media #{$large-up} {
+    min-height: 430px;
+  }
+}
+
+
+
+.panel-height-home {
+  @media #{$large-up} {
+    min-height: 480px;
+  }
+
+  @media #{$small-only} {
+    min-height: 205px;
+  }
+
+  img {
+    @media #{$medium-up} {
+      margin-top: 20px;
+    }
+  }
+}
+
+.content {
+  margin-top: 10px;
+}
+
+.location {
+    margin-bottom: 20px;
+
+    img {
+        height: 23px;
+        margin-top: -3px;
+        margin-right: 3px;
+    }
+}
+
+.home-slider {
+  margin: 20px 0 10px 0;
+  text-align: center;
+
+  @media #{$large-up} {
+    padding: 0px 180px;
+  }
+
+  .panel {
+    @media #{$large-up} {
+      margin: 0px 180px;
+    }
+  }
+
+  p {
+    padding-top: 15px;
+    margin-bottom: -5px;
+
+  }
+}
+
+.footer {
+  text-align: right;
+  margin-bottom: 30px;
+}
+
+
+#featured {
+  /* Pre-loading animation */
+  min-height: 60px;
+  background: url(../img/loading.gif) center center no-repeat;  
+}
+
+#featured ul {
+  /* Prevent bullets showing before .orbit-container is loaded */
+  list-style-type: none;
+}
+
+#featured li {
+  /* Hide images before .orbit-container is loaded */
+  display: none;
+}
+
+#featured .orbit-container li {
+  /* Show images when .orbit-container is loaded */
+  display: block;
+}
+
+#featured .orbit-container {
+  /* Show images when .orbit-container is loaded */
+  background: #f2f2f2; 
+}
+
+
+.landlord-resized {
+  height: 80%;
+  width: 80%;
+
+  @media #{$large-up} {
+    height: 65%;
+    width: 65%;
+  }
+}
+
+.landlord-resized-home {
+  height: 80%;
+  width: 80%;
+
+  @media #{$large-up} {
+    height: 55%;
+    width: 55%;
+  }
+}
+
+
+.sent {
+  p {
+    font-size: 16px;
+    color: lighten($primary-color, 5%);
+  }
+}
+
+.not-sent {
+  p {
+    font-size: 16px;
+    color: lighten(red, 5%);
+  }
+}
